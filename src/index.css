@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Chess Academy Design System - Professional & Modern */
 
 @layer base {
   :root {
+    /* Base colors inspired by chess aesthetics */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 20% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 20% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 20% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Chess-inspired primary (deep blue-black) */
+    --primary: 210 40% 12%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 210 60% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Elegant secondary (warm off-white) */
+    --secondary: 35 20% 95%;
+    --secondary-foreground: 210 40% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Sophisticated muted tones */
+    --muted: 210 15% 94%;
+    --muted-foreground: 210 12% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Chess board accent (golden highlights) */
+    --accent: 45 90% 55%;
+    --accent-foreground: 210 40% 12%;
+    --accent-hover: 45 85% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success and warning states */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 210 40% 12%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --radius: 0.5rem;
+    --border: 210 20% 88%;
+    --input: 210 20% 94%;
+    --ring: 210 40% 12%;
+
+    /* Design system extensions */
+    --radius: 0.75rem;
+    
+    /* Chess Academy specific tokens */
+    --chess-dark: 30 8% 25%;
+    --chess-light: 45 25% 85%;
+    --coach-accent: 220 70% 50%;
+    --student-accent: 160 70% 45%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-chess: linear-gradient(45deg, hsl(var(--chess-dark)), hsl(var(--chess-light)));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.05));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-chess: 0 8px 25px -8px hsl(var(--chess-dark) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
